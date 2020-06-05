@@ -1,0 +1,45 @@
+{
+  "name": "server",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "NODE_ENV=production nodemon bin/www",
+    "dev": "NODE_ENV=development nodemon bin/www",
+    "prd": "pm2 start bin/www --env=production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@types/sequelize": "^4.28.8",
+    "captchapng": "0.0.1",
+    "cos-nodejs-sdk-v5": "^2.5.14",
+    "crypto": "^1.0.1",
+    "crypto-js": "^3.1.9-1",
+    "debug": "^4.1.1",
+    "js-base64": "^2.5.1",
+    "js-md5": "^0.7.3",
+    "js-recommender": "^1.0.5",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.7.0",
+    "koa-body": "^4.1.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-compress": "^3.0.0",
+    "koa-convert": "^1.2.0",
+    "koa-json": "^2.0.2",
+    "koa-jwt": "^3.6.0",
+    "koa-logger": "^3.2.0",
+    "koa-onerror": "^4.1.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.2.0",
+    "mysql2": "^2.0.1",
+    "nodemailer": "^6.4.2",
+    "pug": "^2.0.3",
+    "querystring": "^0.2.0",
+    "redis": "^2.8.0",
+    "request": "^2.88.0",
+    "sequelize": "^5.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
